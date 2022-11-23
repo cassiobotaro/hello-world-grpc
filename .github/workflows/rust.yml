@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: install protobuf compiler
-      run: apt install protobuf-compiler
+      run: sudo apt install -y protobuf-compiler
     - uses: actions/checkout@v3
     - name: Build
       run: cargo build --verbose
